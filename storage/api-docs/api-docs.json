@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Paola Margarita Vasquez Juarez",
+        "description": "API de ejemplo para clase de Desarrollo de BackEnd Y APIs",
+        "contact": {
+            "name": "Paola Margarita Vasquez Juarez",
+            "url": "https://localhost/api/",
+            "email": "ia.paomvj@ufg.edu.sv"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/ejecutar": {
+            "get": {
+                "tags": [
+                    "ejecutar"
+                ],
+                "summary": "Este es un endpoint o metodo para obtener datos y mostrarlos al usuario",
+                "description": "Descripción de la prueba para la clase de Desarrollo de BackEdn y API desarrollo.",
+                "operationId": "ed42aafacf51d9aa570647800fcaa0e9",
+                "responses": {
+                    "200": {
+                        "description": "Se devuelve todos los registros cuando la consulta cuando la consulta sea satisfactoria"
+                    },
+                    "500": {
+                        "description": "No se pudo ejectar la ejecución"
+                    }
+                }
+            }
+        }
+    }
+}
