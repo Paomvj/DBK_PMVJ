@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\respuestaController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\AutorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::get("/obtener",[PaisController::class,"obtener"]);
 
 
 Route::post('/login',[AuthController::class,'login']);
+
+Route::get('/autores',[AutorController::class,'obtenerAutores']);
+
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
     
